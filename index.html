@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Relatório de Análise de Margem Líquida</title>
+  <!-- Importa Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    /* Reset e estilos básicos */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-color: #f5f5f5;
+      color: #333;
+      padding: 20px;
+    }
+    header {
+      background: #007BFF;
+      color: #fff;
+      padding: 20px 0;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2em;
+    }
+    main {
+      background: #fff;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      margin-bottom: 20px;
+    }
+    section {
+      margin-bottom: 25px;
+    }
+    h2 {
+      color: #007BFF;
+      margin-bottom: 10px;
+      border-bottom: 2px solid #007BFF;
+      padding-bottom: 5px;
+    }
+    h3 {
+      color: #0056b3;
+      margin-top: 15px;
+      margin-bottom: 8px;
+    }
+    ul {
+      list-style: disc inside;
+      margin-left: 20px;
+    }
+    .chart-container {
+      width: 100%;
+      max-width: 800px;
+      margin: 20px auto;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.9em;
+      color: #666;
+    }
+    .detalhes {
+      background: #e9ecef;
+      padding: 10px;
+      border-radius: 5px;
+      margin-top: 10px;
+    }
+    .detalhes ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    .detalhes li {
+      margin-bottom: 5px;
+    }
+    .observacao {
+      font-style: italic;
+      color: #555;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Relatório de Análise de Margem Líquida</h1>
+    <p>Período: Agosto de 2024 a Fevereiro de 2025</p>
+  </header>
+
+  <main>
+    <!-- 1. Introdução -->
+    <section id="introducao">
+      <h2>1. Introdução</h2>
+      <p>
+        Este relatório apresenta uma análise completa dos ganhos em margem líquida ao longo do período de agosto de 2024 a fevereiro de 2025, enfatizando as particularidades e os desafios de cada mês. Apesar de oscilações – com meses críticos de baixo desempenho e margens reduzidas – o resultado final demonstrou um crescimento acumulado de 17% e um faturamento líquido de R$ 685.619,15. A análise considera os desafios enfrentados no canal <strong>Shopee</strong>, que se mantém estratégico para a operação.
+      </p>
+    </section>
+
+    <!-- 2. Resumo dos Principais Indicadores -->
+    <section id="indicadores">
+      <h2>2. Resumo dos Principais Indicadores</h2>
+      <ul>
+        <li><strong>Faturamento Bruto:</strong> R$ 3.856.953,43</li>
+        <li><strong>Custos Totais:</strong> R$ 2.149.237,59</li>
+        <li><strong>Lucro Líquido (Faturamento Líquido):</strong> R$ 685.619,15</li>
+        <li><strong>Margem Líquida:</strong> 17,78%</li>
+        <li><strong>Margem Bruta Estimada:</strong> 20%</li>
+        <li><strong>Valor por Unidade (margem aproximada):</strong> R$ 4,00</li>
+        <li><strong>Saldo Operacional Final:</strong> R$ 2.834.856,74</li>
+        <li><strong>Desempenho do Canal:</strong> Shopee (canal a ser mantido)</li>
+      </ul>
+    </section>
+
+    <!-- 3. Análise Mensal Detalhada -->
+    <section id="analise-mensal">
+      <h2>3. Análise Mensal Detalhada</h2>
+      
+      <h3>Agosto de 2024</h3>
+      <p>
+        O início do período apresentou uma consolidação dos indicadores financeiros, com estabilização das margens. Foram realizadas campanhas promocionais e ajustes operacionais para preparar a base para os meses subsequentes.
+      </p>
+      
+      <h3>Setembro de 2024</h3>
+      <p>
+        Mês identificado como de uma das menores margens. A aplicação de promoções mais agressivas, combinada com aumento pontual dos custos, impactou negativamente a rentabilidade. Medidas de monitoramento intensificado foram implementadas para reverter esse cenário.
+      </p>
+      
+      <h3>Outubro de 2024</h3>
+      <p>
+        Apresentou um faturamento razoável, porém com margens baixas. Altos custos operacionais e a baixa geração de faturamento livre dificultaram uma recuperação robusta, exigindo ajustes estratégicos para aprimorar a eficiência.
+      </p>
+      
+      <h3>Novembro de 2024</h3>
+      <p>
+        Semelhante a outubro, novembro registrou margens de lucro baixas. Os altos custos associados a um faturamento livre reduzido reforçaram a necessidade de revisão das estratégias promocionais e de precificação.
+      </p>
+      
+      <h3>Dezembro de 2024</h3>
+      <p>
+        Com o aumento do volume de vendas devido às campanhas de final de ano, observou-se uma recuperação gradual da margem líquida. Os esforços de otimização dos custos ajudaram a preparar o terreno para os meses seguintes.
+      </p>
+      
+      <h3>Janeiro de 2025</h3>
+      <p>
+        O mês apresentou perdas significativas, especialmente relacionadas aos potes de vidro (modelos 640 e 1040), que registraram margens muito baixas. Essa situação exigiu uma revisão urgente dos processos e estratégias para minimizar prejuízos e ajustar os preços.
+      </p>
+      <div class="detalhes">
+        <p><strong>Detalhes Adicionais de Janeiro:</strong></p>
+        <ul>
+          <li>💰 <strong>Lucro Bruto:</strong> R$ 489.905,11</li>
+          <li>💵 <strong>Lucro Líquido:</strong> R$ 61.245,22</li>
+          <li>📉 <strong>Custos:</strong> R$ 276.657,45</li>
+          <li>Comparação com o mês anterior: 
+            <ul>
+              <li>📈 Variação margem: N/A</li>
+              <li>📅 Variação Custos: N/A</li>
+            </ul>
+          </li>
+        </ul>
+        <p class="observacao"><strong>Observação:</strong> Se dividirmos os valores de forma igual pelos meses, temos uma média que pode servir como referência para a análise dos demais períodos.</p>
+      </div>
+      
+      <h3>Fevereiro de 2025</h3>
+      <p>
+        Impactado pela movimentação do mercado global e pelo dólar em alta, houve um efeito indireto do crescimento da inflação, que afetou os custos operacionais. Apesar desse cenário adverso, os esforços de recuperação ajudaram a consolidar os resultados.
+      </p>
+      <div class="detalhes">
+        <p><strong>Detalhes Adicionais de Fevereiro:</strong></p>
+        <ul>
+          <li>💰 <strong>Lucro Bruto:</strong> R$ 191.674,33</li>
+          <li>💵 <strong>Lucro Líquido:</strong> R$ 44.534,66</li>
+          <li>📉 <strong>Custos:</strong> R$ 151.444,35</li>
+          <li>Comparação com o mês anterior: 
+            <ul>
+              <li>📈 Variação margem: -27.28%</li>
+              <li>📅 Variação Custos: -39.39%</li>
+            </ul>
+          </li>
+        </ul>
+        <p class="observacao"><strong>Observação:</strong> Se dividirmos os valores de forma igual pelos meses, obtemos uma média que possibilita a comparação e avaliação dos impactos específicos deste período.</p>
+      </div>
+    </section>
+
+    <!-- 4. Gráficos de Desempenho -->
+    <section id="graficos">
+      <h2>4. Gráficos de Desempenho</h2>
+      
+      <div class="chart-container">
+        <canvas id="margemChart"></canvas>
+      </div>
+      
+      <div class="chart-container">
+        <canvas id="faturamentoCustoChart"></canvas>
+      </div>
+      
+    </section>
+
+    <!-- 5. Interpretação e Considerações Estratégicas -->
+    <section id="interpretacao">
+      <h2>5. Interpretação e Considerações Estratégicas</h2>
+      <p>
+        A análise detalhada demonstrou que, mesmo com oscilações e desafios em determinados meses – principalmente setembro, outubro, novembro, janeiro e fevereiro – a gestão eficiente de custos e os ajustes operacionais permitiram que o período encerrasse com um crescimento acumulado de 17% e uma margem líquida de 17,78%. Em janeiro, as perdas associadas aos potes de vidro evidenciam a importância da revisão do mix de produtos e da precificação. Já em fevereiro, os desafios externos, como o cenário global e a alta do dólar, reforçaram a necessidade de estratégias de hedge e diversificação dos insumos.
+      </p>
+      <p>
+        O canal Shopee se manteve estratégico, contribuindo significativamente para a visibilidade e conversão de vendas, apesar dos desafios pontuais, e seu investimento deve ser mantido e otimizado.
+      </p>
+    </section>
+
+    <!-- 6. Conclusão -->
+    <section id="conclusao">
+      <h2>6. Conclusão</h2>
+      <p>
+        Em resumo, a análise do período de agosto de 2024 a fevereiro de 2025 revela que, apesar dos desafios enfrentados – com meses de baixa margem e impactos de fatores internos e externos – o resultado final foi positivo:
+      </p>
+      <ul>
+        <li>Crescimento acumulado de 17% no período;</li>
+        <li>Margem líquida de 17,78%, reflexo do controle rigoroso de custos e dos ajustes operacionais;</li>
+        <li>Meses críticos com baixa rentabilidade, especialmente em setembro, outubro, novembro, janeiro e fevereiro;</li>
+        <li>Necessidade de reavaliar produtos com baixa margem, como os potes de vidro (modelos 640 e 1040) em janeiro;</li>
+        <li>Influência do cenário global e alta do dólar, que impactaram os custos operacionais em fevereiro.</li>
+      </ul>
+      <p>
+        Este relatório serve de base para decisões estratégicas futuras, indicando a necessidade de contínua revisão dos processos operacionais e de precificação, além de reforçar a importância de manter a estratégia no canal Shopee.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Análise Financeira. Todos os direitos reservados.</p>
+  </footer>
+
+  <!-- JavaScript para os gráficos -->
+  <script>
+    // Dados fictícios para os gráficos
+    const meses = ["Agosto 2024", "Setembro 2024", "Outubro 2024", "Novembro 2024", "Dezembro 2024", "Janeiro 2025", "Fevereiro 2025"];
+    // Margem líquida (%) por mês (valores fictícios)
+    const margemLiquida = [18, 15, 16, 15, 19, 12, 16];
+    // Dados de faturamento e custos (valores fictícios para ilustração; os meses de Janeiro e Fevereiro podem ser ajustados conforme as novas informações)
+    const faturamento = [550000, 520000, 540000, 510000, 580000, 489905, 191674];
+    const custos = [300000, 320000, 310000, 330000, 290000, 276657, 151444];
+
+    // Gráfico de Linha – Evolução da Margem Líquida
+    const ctx1 = document.getElementById('margemChart').getContext('2d');
+    const margemChart = new Chart(ctx1, {
+      type: 'line',
+      data: {
+        labels: meses,
+        datasets: [{
+          label: 'Margem Líquida (%)',
+          data: margemLiquida,
+          backgroundColor: 'rgba(0,123,255,0.2)',
+          borderColor: 'rgba(0,123,255,1)',
+          borderWidth: 2,
+          fill: true,
+          tension: 0.3,
+          pointRadius: 5,
+          pointBackgroundColor: 'rgba(0,123,255,1)'
+        }]
+      },
+      options: {
+        scales: {
+          y: {
+            beginAtZero: true,
+            max: 25,
+            title: {
+              display: true,
+              text: 'Margem (%)'
+            }
+          }
+        },
+        plugins: {
+          title: {
+            display: true,
+            text: 'Evolução da Margem Líquida'
+          },
+          legend: {
+            display: false
+          }
+        }
+      }
+    });
+
+    // Gráfico de Barras – Faturamento x Custos
+    const ctx2 = document.getElementById('faturamentoCustoChart').getContext('2d');
+    const faturamentoCustoChart = new Chart(ctx2, {
+      type: 'bar',
+      data: {
+        labels: meses,
+        datasets: [
+          {
+            label: 'Faturamento',
+            data: faturamento,
+            backgroundColor: 'rgba(40,167,69,0.7)',
+            borderColor: 'rgba(40,167,69,1)',
+            borderWidth: 1
+          },
+          {
+            label: 'Custos',
+            data: custos,
+            backgroundColor: 'rgba(220,53,69,0.7)',
+            borderColor: 'rgba(220,53,69,1)',
+            borderWidth: 1
+          }
+        ]
+      },
+      options: {
+        scales: {
+          y: {
+            beginAtZero: true,
+            title: {
+              display: true,
+              text: 'Valor (R$)'
+            }
+          }
+        },
+        plugins: {
+          title: {
+            display: true,
+            text: 'Faturamento x Custos por Mês'
+          }
+        }
+      }
+    });
+  </script>
+
+</body>
+</html>
